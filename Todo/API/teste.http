@@ -1,0 +1,27 @@
+
+### Testar a raiz do projeto
+GET http://localhost:5125
+
+### Listar todas as tarefas
+GET http://localhost:5125/api/tarefas/listar
+
+### Buscar uma tarefa pelo ID
+GET http://localhost:5125/api/tarefas/buscar/2
+
+### Buscar uma tarefa pelo ID
+GET http://localhost:5125/api/tarefas/deletar/2
+
+### Cadastrar
+POST  http://localhost:5125/api/tarefas/cadastrar
+Content-Type: application/json
+
+{
+    "Nome": "Estudar para a prova de Dev Visual"
+} 
+### Alterar tarefa
+PUT  http://localhost:5125/api/tarefas/alterar/2
+Content-Type: application/json
+
+{
+    "Nome": "lembrar que semana que vem tem prova"
+} 
